@@ -1,0 +1,65 @@
+{
+    "participant_id": {
+        "LongName": "Participant raw ID",
+        "Description": "The number of the participant"
+    },
+    "age": {
+        "LongName": "Age of the participant",
+        "Description": "Age of the participant at the date of acquisition",
+		"Unit": "years"
+    },
+    "sex": {
+        "LongName": "Sex of the participant",
+        "Levels":{
+			"m": "male",
+			"f": "female",
+			"o": "other",
+		}
+    },
+    "handedness": {
+        "LongName": "Dominant hand of the participant",
+        "Levels": {
+			"r": "right",
+			"l": "left",
+		}
+    },
+    "years_of_education": {
+        "LongName": "Number of years of full-time education of the participant",
+        "Description": "The number of years the participant had spent in full-time education at the date of acquisition"
+    },
+    "nationality": {
+        "LongName": "Nationality of the participant",
+        "Description": "The nationality of the participant"
+    },
+    "active_motor_thresholds***": {
+        "LongName": "Active motor thresholds of the participant across sessions and hemispheres",
+		"Description": "The 4 active motor thresholds of the participant across sessions 01 and 02, and the right and left hemispheres.",
+		"Format": "[ses-01 right hemisphere, ses-01 left hemisphere, ses-02 right hemisphere, ses-02 left hemisphere]",
+    },
+    "task_order ***": {
+        "LongName": "Counterbalancing group for the behavioural tasks of the participant",
+        "Description": "Counterbalancing group for the behavioural task of the participant, where visual/auditory represents which task modality block, and motion/stationary represents which subtask was presented first within each ABBA counterbalanced modality block."
+		"Levels": {
+			"auditory_motion": "block 1 = auditory tasks, block 2 = visual tasks; each block containing 4 tasks in the ABBA order: motion, stationary, stationary and motion."
+			"auditory_stationary": "block 1 = auditory tasks, block 2 = visual tasks; each block containing 4 tasks in the ABBA order: stationary, motion, motion and stationary."
+			"visual_motion": "block 1 = visual tasks, block 2 = auditory tasks; each block containing 4 tasks in the ABBA order: motion, stationary, stationary, and motion."
+			"visual_stationary": "block 1 = visual tasks, block 2 = auditory tasks; each block containing 4 tasks in the ABBA order: stationary, motion, motion and stationary."
+		},
+    "session_order ***": {
+        "LongName": "Counterbalancing group for tms and sham conditions, and the order of hemispheric stimulation",
+        "Description": "The order of real or sham tms across sessions, and the order in which hemispheres were stimulated.",
+		"Levels": {
+			"tms_sham": "ses-01 = tms, ses-02 = sham",
+			"sham_tms": "ses-01 = sham, ses-02 = tms"
+		}
+	}
+	"order_of_hemispheric_stimulation ***": {
+		"LongName": "Counterbalancing group for order of hemispheric stimulation",
+		"Description": Order in which hMT+/V5 of each hemisphere is stimulated sequentially in each session",
+		"Levels": {
+			"rl": "order = R-hMT+/V5 then L-hMT+/V5",
+			"lr": "order = L-hMT+/V5 then R-hMT+/V5"
+		}
+    }
+}
+

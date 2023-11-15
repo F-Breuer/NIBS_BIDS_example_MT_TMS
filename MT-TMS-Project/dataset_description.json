@@ -1,0 +1,17 @@
+{
+    "Name": "Multi-Talented hMT+? A TMS Study of the Causal Role of hMT+/V5 in Visual and Auditory Motion Processing",
+    "BIDSVersion": "1.8.0",
+    "License": "CC0-1.0",
+    "Authors": [
+		"Friederike Breuer, ORCID:0000-0002-3020-6590"
+        "Ceren Battal, ORCID:0000-0002-9844-7630",
+		"Julie Duque, 0000-0001-9575-7097",
+		"Teresa Schuhmann, ORCID:0000-0003-2916-8141",
+		"Olivier Collignon, ORCID:0000-0003-1882-3550",
+    ],
+    "Acknowledgments": "Thanks go to Remi Gau (ORCID:0000-0002-1535-9767) for his help with bidsifying this dataset. Thanks go to Dominika Sulcova (ORCID:0000-0003-1519-4410) for her hands-on support in the neurostimulation lab and with the Visor2 system.",
+    "HowToAcknowledge": "",
+    "ReferencesAndLinks": [],
+    "DatasetDOI": "",
+    "Funding": []
+}

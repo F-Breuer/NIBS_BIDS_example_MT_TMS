@@ -1,0 +1,40 @@
+authors:
+  - firstname: Friederike
+    lastname: Breuer
+    affiliation: UCLouvain
+    id: ORCID:0000-0002-3020-6590
+  - firstname: Ceren
+    lastname: Battal
+    affiliation: UCLouvain
+    id: ORCID:0000-0002-9844-7630
+  - firstname: Remi
+    lastname: Gau
+    affiliation: UCLouvain
+    id: ORCID:0000-0002-1535-9767
+  - firstname: Teresa
+    lastname: Schuhmann
+    affiliation: UCLouvain
+    id: ORCID:0000-0003-2916-8141
+  - firstname: Olivier
+    lastname: Collignon
+    affiliation: UCLouvain
+    id: ORCID:0000-0003-1882-3550
+title: Multi-Talented hMT+? A TMS Study of the Causal Role of hMT+/V5 in Visual and Auditory Motion Processing
+description: TMS study of the effect of stimulating hMT+/V5 on visual and auditory motion perception
+keywords:
+  - tms
+  - MT
+  - V5
+  - motion
+  - auditory
+  - visual
+license:
+  name: CC0-1.0
+  url: https://creativecommons.org/publicdomain/zero/1.0/
+resourcetype: Dataset
+references:
+  - citation: ''
+    id: ''
+    reftype: IsSupplementTo
+templateversion: 1.2
+funding: []
