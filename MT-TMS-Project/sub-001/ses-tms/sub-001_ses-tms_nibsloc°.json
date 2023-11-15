@@ -1,0 +1,19 @@
+{
+	"Type_1" : "TMS",
+	"StimulationFocus_1" : "42, -68, 4",
+	"StimulationArea_1" : "R-hMT+/V5",
+	"PositioningDescription_1" : "Individual MNI coordinates of the right (and left) hMT+/V5 complex were defined using a visual motion fMRI localiser (https://github.com/cpp-lln-lab/localizer_visual_motion). Functional data was spatially smoothed using a 6-mm full-width half-maximum (FWHM) kernel. A motion vs. static contrast was computed with a paired t-test. Statistical inferences were made at a voxel-level threshold of p < 0.05, family-wise error (FWE)-corrected. Individual right and left peak coordinates for hMT+/V5 in MNI space were input into the neuronavigation software (see participants.tsv for overview of all coordinates). A T1w MRI (/sub-001/ses-mri/anat/sub-001_ses-mri_T1w.nii.gz) was used to reconstruct a 3D model of the brain surface and scalp in the neuronavigation software. At the start of the TMS sessions, the subject’s landmarks (nasion and tragi) and head shape was co-registered with their anatomical image following standard procedures.",
+	"pos_ydir_1" : "The coil was oriented parallel to the interhemispheric sulcus (i.e. horizontally), with the coil handle pointing posteriorly.",
+	"photo" : "na",	
+	
+	"Type_2" : "TMS",
+	"StimulationFocus_2" : "-42, -72, -2",
+	"StimulationArea_2" : "L-hMT+/V5",
+	"PositioningDescription_2" : "Same as for Type_1 for right hMT+/V5 complex. The order in which the hemispheres were stimulated was counterbalanced across subjects (see participants.tsv), here the order was right then left hMT+/V5.",
+	"pos_ydir_1" : "Same as for Type_1.",
+	"photo" : "na",
+	
+	"NIBSCoordinateSystem" : "MNI",
+	"NIBSCoordinateUnits" : "mm",
+	"NIBSCoordinateSystemDescription" : "na"
+}
