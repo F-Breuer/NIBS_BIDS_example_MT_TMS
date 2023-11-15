@@ -1,0 +1,9 @@
+{
+    "session_id": {
+        "LongName": "Session ID",
+        "Description": "The number of the session (order of 2 sessions total)"
+    },
+	"acq_time": {
+        "LongName": "Date and starttime of session",
+    },
+}
