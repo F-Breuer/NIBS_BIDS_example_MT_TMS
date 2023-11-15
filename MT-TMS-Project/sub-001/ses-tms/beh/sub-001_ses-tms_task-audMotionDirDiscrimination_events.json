@@ -1,0 +1,83 @@
+{
+  "onset": {
+    "LongName": "onset",
+    "Description": "Onset (in seconds) of the event, measured from the beginning of the acquisition\nof the first data point stored in the corresponding task data file.\nNegative onsets are allowed, to account for events that occur prior to the first\nstored data point.\nFor example, in case there is an in-scanner training phase that begins before\nthe scanning sequence has started events from this sequence should have\nnegative onset time counting down to the beginning of the acquisition of the\nfirst volume.\n\nIf any data points have been discarded before forming the data file\n(for example, \"dummy volumes\" in BOLD fMRI),\na time of 0 corresponds to the first stored data point and not the first\nacquired data point.\n",
+    "Units": "s"
+  },
+  "duration": {
+    "LongName": "duration",
+    "Description": "Duration of the event (measured from onset) in seconds.\nMust always be either zero or positive (or `n/a` if unavailable).\nA \"duration\" value of zero implies that the delta function or event is so\nshort as to be effectively modeled as an impulse.\n",
+    "Units": "s"
+  },
+  "trial_type": {
+    "LongName": "trial type",
+    "Description": "Primary categorisation of each trial to identify them as instances of the\nexperimental conditions.\nFor example: for a response inhibition task, it could take on values `go` and\n`no-go` to refer to response initiation and response inhibition experimental\nconditions.\n"
+  },
+  "event_number": {
+    "LongName": "event number",
+    "Description": "number of the trial"
+  },
+  "coherence": {
+    "LongName": "auditory motion coherence",
+    "Description": "Coherence is the parameter of each presented stimulus that is adapted by the QUEST algorithm. The auditory motion coherence refers to the proportion of the dominating auditory stimuli to the other (right vs. left-ward moving auditory stimuli) in the auditory motion task.",
+    "Units": "The range of the coherence parameter is from min 0.5 (50% stimuli moving left, 50% stimuli moving rightward) to 1 (100% stimuli moving coherently in one direction)."
+  },
+  "coherence_scale": {
+    "LongName": "auditory motion coherence scaled",
+    "Description": "coherence -0.5, i.e. the amount by which the dominant (louder) moving auditory stimulus dominates"
+  },
+  "correct_response": {
+    "LongName": "correct response",
+    "Description": "The correct response value of that trial",
+	"Levels": {
+		"1": "leftward moving stimuli dominates",
+		"2": "rightward moving stimuli dominates"
+	}
+  },
+  "subject_response": {
+    "LongName": "subject's response",
+    "Description": "The response made by the subject which can be compared to the correct response.",
+		"Levels": {
+		"1": "leftward moving stimuli dominates",
+		"2": "rightward moving stimuli dominates"
+	}
+  },
+  "is_correct_response": {
+    "Description": "Whether the given response to this trial correct was correct or not. This parameter informs the QUEST adaptation algorithm determining whether the subsequent trial's coherence parameter is adjusted up or downwards.",
+		"Levels": {
+		"0": "incorrect",
+		"1": "correct"
+  }
+  "NIBS_HardwareSoftware": {
+    "Type": "TMS",
+    "Subtype": "cTBS",
+    "Description": "40s (600 pulses) continuous theta burst stimulation applied sequentially to both R- and L-hMT+/V5",
+    "Manufacturer": "MagVenture",
+    "DeviceModelName": "MagPro stimulator (MagPro X100 with MagOption; MagVenture, Farum, Denmark)",
+    "CoilSpec": "MagVenture MCF-B65 coil",
+    "StimulationIntensity": "100% AMT",
+    "MotorThreshold": "R-hMT+/V5: 43% MSO, L-hMT+/V5: 44% MSO (target muscle: FDI)",
+    "AuditoryMasking": "earplugs",
+    "PulseSpec": {
+      "Waveform": "biphasic"
+    },
+	"TrainLength": 40s,
+	"InterTrainInterval": n/a,
+	"BurstsNumber": 200,
+	"BurstsFrequency": 5 Hz,
+	"PulsesNumber": 3,
+	"PulsesFrequency": 50 Hz ,
+	"InterPulsesInterval": ,
+	"TotalPulsesNumber": 600 pulses,
+	"Duration": 40s,
+  }, 
+  "NIBS_Procedure": {
+    "StimulationProcedure": "Using a butterfly-coil (MagVenture MCF-B65) one standard train of 600 biphasic pulses of cTBS (i.e. 40s) was delivered to hMT+/V5 in each hemisphere in turn at an intensity of 100% of subjects hemisphere-specific session-specific individual active motor threshold (AMT). The coil was oriented parallel to the longitudinal fissure with the handle pointing in a posterior direction. The order in which hemispheres were stimulated was counterbalanced across subjects, in this subject: R then L hemisphere.",
+    "StimulationIntensityProcedure": ""The active motor threshold (aMT) was measured as the lowest intensity stimulation intensity at which a single TMS pulse over the subjects’ motor hot spot evoked a small visible response in the contralateral first dorsal interosseous (FDI) muscle in 5 out of 10 consecutive trials when the subject activated the FDI muscles."
+  },
+  "NIBS_Neuronavigation": {
+    "NeuronavigationSoftware": " Visor2 neuronavigation system (Visor 2.3.3; Advanced Neuro Technologies, Enschede, The Netherlands)",
+    "CameraManufacturer": "Polaris optical tracking system (Polaris Spectra; Northern Digital Inc. Europe, Radolfzell, Germany)"
+  }
+}
+
