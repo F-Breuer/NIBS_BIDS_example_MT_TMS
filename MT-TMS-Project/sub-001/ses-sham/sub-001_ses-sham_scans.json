@@ -1,0 +1,9 @@
+{
+    "filename": {
+        "LongName": "Name of the behavioural data file"
+    },
+	"acq_time": {
+        "LongName": "Acquisition date and time",
+		"Description": "Date and time of each task run"
+    },
+}
